@@ -3,7 +3,8 @@
 
 # MAIN CODE LINE
 
-def multiple_line_writing(filename, lines):
-    with open(filename, "w") as f:
-        f.writelines(lines)
+with open("mylife.py", "w") as text_file:
+    while True:
+        line_input = input("Enter a new line: ")
+        text_file.write (line_input + "\n")
 
