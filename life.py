@@ -9,7 +9,7 @@ with open("mylife.txt", "w") as text_file:
         text_file.write (line_input + "\n")
 
         more_line_input = input("Do you want to input more lines? (y/n): ")
-        if more_line_input() == "y":
+        if more_line_input.lower() == "y":
             continue
         else:
             break
