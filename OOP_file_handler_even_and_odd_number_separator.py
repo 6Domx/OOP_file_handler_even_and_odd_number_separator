@@ -22,3 +22,6 @@ def evn_odd_separate(numbers):
         odd_file.writelines([str(num) + "\n" for num in odd_numbers])
 
 
+evn_odd_separate("numbers.txt")  
+
+print("Even and odd numbers separated successfully!")
