@@ -14,5 +14,14 @@ def evn_odd_separate(numbers):
 
     evn_numbers = [num for num in numbers if num % 2 == 0]
     odd_numbers = [num for num in numbers if num % 2 != 0]
-
     
+    with open("even.txt", "w") as evn_file:
+        evn_file.writelines([str(num) + "\n" for num in evn_numbers])
+
+    with open("odd.txt", "w") as odd_file:
+        odd_file.writelines([str(num) + "\n" for num in odd_numbers])
+
+evn_odd_separate('numbers.txt')  
+
+print("Even and odd numbers separated successfully!")
+
