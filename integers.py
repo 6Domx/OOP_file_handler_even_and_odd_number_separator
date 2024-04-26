@@ -13,9 +13,9 @@ def integer_cb_sqr(main_file):
     with open("double.txt", "w") as sqr_file, open("triple.txt", "w") as cb_file:
         for num in integers:
             if num % 2 == 0:
-                sqr_file.write(str(num**) + "\n")
+                sqr_file.write(str(num ** 2) + "\n")
 
             else:
-                cb_file.write(str(num**) + "\n")
+                cb_file.write(str(num ** 3) + "\n")
 
- 
+integer_cb_sqr('integers_values.txt') 
